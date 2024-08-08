@@ -108,7 +108,6 @@ if [ -f $SRC_GGML/llama-src.patch ]; then
     # ggml/src/ggml-backend-impl.h -> src/ggml-backend-impl.h
     # ggml/src/ggml-backend.c      -> src/ggml-backend.c
     # ggml/src/ggml-blas.cpp       -> src/ggml-blas.cpp
-    # ggml/src/ggml-blas.h         -> src/ggml-blas.h
     # ggml/src/ggml-common.h       -> src/ggml-common.h
     # ggml/src/ggml-cuda/*         -> src/ggml-cuda/*
     # ggml/src/ggml-cuda.cu        -> src/ggml-cuda.cu
@@ -151,11 +150,9 @@ if [ -f $SRC_GGML/llama-src.patch ]; then
         -e 's/\/ggml\/src\/ggml-aarch64\.c/\/src\/ggml-aarch64.c/g' \
         -e 's/\/ggml\/src\/ggml-aarch64\.h/\/src\/ggml-aarch64.h/g' \
         -e 's/\/ggml\/src\/ggml-alloc\.c/\/src\/ggml-alloc.c/g' \
-        -e 's/\/ggml\/src\/ggml-aarch64/\/src\/ggml-aarch64/g' \
         -e 's/\/ggml\/src\/ggml-backend-impl\.h/\/src\/ggml-backend-impl.h/g' \
         -e 's/\/ggml\/src\/ggml-backend\.c/\/src\/ggml-backend.c/g' \
         -e 's/\/ggml\/src\/ggml-blas\.cpp/\/src\/ggml-blas.cpp/g' \
-        -e 's/\/ggml\/src\/ggml-blas\.h/\/src\/ggml-blas.h/g' \
         -e 's/\/ggml\/src\/ggml-common\.h/\/src\/ggml-common.h/g' \
         -e 's/\/ggml\/src\/ggml-cuda\//\/src\/ggml-cuda\//g' \
         -e 's/\/ggml\/src\/ggml-cuda\.cu/\/src\/ggml-cuda.cu/g' \
